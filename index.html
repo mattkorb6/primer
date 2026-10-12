@@ -1,0 +1,40 @@
+---
+layout: default
+title: "Making the Commonplace Visible"
+description: "A friendly field guide to communication theory and AI-shaped communication problems."
+---
+<section class="home-hero" aria-labelledby="home-title">
+  <div class="hero-copy">
+    <p class="eyebrow">A field guide for ordinary communication problems</p>
+    <h1 id="home-title">The message is never <em>just</em> the message.</h1>
+    <p class="hero-intro">When an AI system summarizes, recommends, translates, or speaks for us, familiar communication problems become newly visible. This site offers a set of theory tools for looking closely at what is happening.</p>
+    <a class="button-link" href="{{ '/transmission/' | relative_url }}">Begin with transmission <span aria-hidden="true">→</span></a>
+  </div>
+  <aside class="hero-note" aria-label="Project premise">
+    <span class="note-label">Working premise</span>
+    <p>Communication is not a pipe between two points. It is a situation: shaped by materials, people, cultures, institutions, and now algorithms.</p>
+    <span class="note-number" aria-hidden="true">01</span>
+  </aside>
+</section>
+
+<section class="home-section" aria-labelledby="lenses-title">
+  <div class="section-heading">
+    <p class="eyebrow">Six ways in</p>
+    <h2 id="lenses-title">Choose a lens, then look again.</h2>
+  </div>
+  <div class="lens-grid">
+    {% for item in site.data.navigation %}
+      <a class="lens-card" href="{{ item.url | relative_url }}">
+        <span class="card-index">{{ forloop.index | prepend: '0' }}</span>
+        <h3>{{ item.title }}</h3>
+        <span class="card-arrow" aria-hidden="true">↗</span>
+      </a>
+    {% endfor %}
+  </div>
+</section>
+
+<section class="home-invitation" aria-labelledby="invitation-title">
+  <p class="eyebrow">For readers who are not communication experts</p>
+  <h2 id="invitation-title">Start with something that has gone a little wrong.</h2>
+  <p>Bring a confusing email, an unhelpful chatbot answer, a meeting where everyone left with a different story, or a recommendation that felt strangely personal. Theory is useful when it changes what you can notice in a real situation.</p>
+</section>

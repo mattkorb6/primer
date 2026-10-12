@@ -1,0 +1,13 @@
+title: "Making the Commonplace Visible"
+description: "A communication theory field guide for ordinary problems in an age of artificial intelligence."
+url: "https://mattkorb6.github.io"
+baseurl: "/primer"
+repository: "mattkorb6/primer"
+github_username: "mattkorb6"
+lang: "en-US"
+permalink: pretty
+exclude:
+  - Gemfile
+  - Gemfile.lock
+  - vendor
+  - README.md
